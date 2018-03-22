@@ -9,7 +9,8 @@ import java.io.IOException;
 
 import src.ph.dao.UserDAO;
 import src.ph.po.User;
-@WebServlet(name = "LoginServlet")
+//@WebServlet(name = "LoginServlet")
+@WebServlet( "/LoginServlet")
 //Login Servlet
 public class LoginServlet extends HttpServlet
 {
@@ -25,7 +26,8 @@ public class LoginServlet extends HttpServlet
 
             //1.验证验证码
             String realcode=(String) request.getSession(true).getAttribute("realcode");//session中的验证码
-            if(!realcode.equalsIgnoreCase(usercode))//如果两个验证码不一致
+//            if(!realcode.equalsIgnoreCase(usercode))//如果两个验证码不一致
+            if(false)
             {
                 request.setAttribute("msg", "验证码输入错误");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
