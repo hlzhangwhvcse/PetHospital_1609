@@ -1,13 +1,10 @@
 package src.ph.po;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Vet
+public class Speciality
 {
     private int id;
     private String name;
-    private List<Speciality> specs = new ArrayList<Speciality>();
+    private String description;
     public int getId() {
         return id;
     }
@@ -20,10 +17,10 @@ public class Vet
     public void setName(String name) {
         this.name = name;
     }
-    public List<Speciality> getSpecs() {
-        return specs;
+    public String getDesc() {
+        return description;
     }
-    public void setSpecs(List<Speciality> specs) {
-        this.specs = specs;
+    public void setDesc(String desc) {
+        this.description = desc;
     }
 }

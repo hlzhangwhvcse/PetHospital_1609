@@ -7,6 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import java.util.List;
+//import ph.dao.SpecialityDAO;
+import src.ph.dao.VetDAO;
+import src.ph.po.Speciality;
+import src.ph.po.Vet;
+
 @WebServlet(name = "VetServlet")
 public class VetServlet extends HttpServlet
 {
