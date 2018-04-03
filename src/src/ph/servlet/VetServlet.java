@@ -13,7 +13,8 @@ import src.ph.dao.VetDAO;
 import src.ph.po.Speciality;
 import src.ph.po.Vet;
 
-@WebServlet(name = "VetServlet")
+//@WebServlet(name = "VetServlet")
+@WebServlet( "/VetServlet")
 public class VetServlet extends HttpServlet
 {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
