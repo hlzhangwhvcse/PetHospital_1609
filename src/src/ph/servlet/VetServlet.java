@@ -21,15 +21,15 @@ public class VetServlet extends HttpServlet
     {
         //doPost方法会被多个表单调用 ,查询医生,增加医生,增加专业  因此这里需要根据不同表单传递的标示参数调用不同的方法
         String m = request.getParameter("m");
-        if("search".equals(m))
+        if ("search".equals(m))
         {
             search(request, response);
         }
-        else if("addSpec".equals(m))
+        else if ("addSpec".equals(m))
         {
             addSpec(request, response);
         }
-        else if("addVet".equals(m))
+        else if ("addVet".equals(m))
         {
             addVet(request, response);
         }
@@ -51,42 +51,36 @@ public class VetServlet extends HttpServlet
                 request.setAttribute("msg", "成功删除医生：" + request.getParameter("vetName"));
                 request.getRequestDispatcher("/vetsearch.jsp").forward(request, response);
             }
-            else if("newSpec".equals(mode))
+            else if ("newSpec".equals(mode))
             {
                 request.getRequestDispatcher("/specialityAdd.jsp").forward(request, response);
-            }
-            else if("newVet".equals(mode))
+            } else if ("newVet".equals(mode))
             {
                 request.setAttribute("specs", new SpecialityDAO().getAll());
                 request.getRequestDispatcher("/vetadd.jsp").forward(request, response);
-            }
-            else
-            {
+            } else
+                {
                 request.getRequestDispatcher("/vetsearch.jsp").forward(request, response);
             }
         }
-
-
-        catch(Exception e)
+        catch (Exception e)
         {
             request.setAttribute("msg", e.getMessage());
             request.getRequestDispatcher("/vetsearch.jsp").forward(request, response);
         }
     }
 
-    private void search(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException
-    {
-        String vname=request.getParameter("vname");
-        String sname=request.getParameter("sname");
+    private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String vname = request.getParameter("vname");
+        String sname = request.getParameter("sname");
         try
         {
-            List<Vet> vets=new VetDAO().search(vname, sname);
-            if(0==vets.size())
+            List<Vet> vets = new VetDAO().search(vname, sname);
+            if (0 == vets.size())
             {
                 request.setAttribute("msg", "没有相关医生信息");
                 request.getRequestDispatcher("/vetsearch.jsp").forward(request, response);
-            }
-            else
+            } else
             {
                 request.setAttribute("vets", vets);
                 request.getRequestDispatcher("/vetsearch_result.jsp").forward(request, response);
@@ -99,18 +93,18 @@ public class VetServlet extends HttpServlet
         }
     }
 
-    private void addSpec(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException
+    private void addSpec(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         Speciality spec = new Speciality();
         String specName = request.getParameter("specName");
         String specDesc = request.getParameter("specDesc");
-        if("".equals(specName))
+        if ("".equals(specName))
         {
             request.setAttribute("msg", "请输入专业名称");
             request.getRequestDispatcher("/specialityAdd.jsp").forward(request, response);
         }
         else
-        {
+            {
             spec.setName(specName);
             spec.setDesc(specDesc);
             try
@@ -121,52 +115,58 @@ public class VetServlet extends HttpServlet
             }
             catch (Exception e)
             {
-                request.setAttribute("msg",e.getMessage());
-                doGet(request,response);
+                request.setAttribute("msg", e.getMessage());
+                doGet(request, response);
             }
         }
     }
 
-    private void addVet(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException
+    private void addVet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        //这里需要根据表单封装一个Vet   表单里有医生名  专业id下拉列表
-        Vet vet=new Vet();
-        //根据下拉列表封装多个专业
-        String[] sids = request.getParameterValues("sid");
-        String vname = request.getParameter("vname");
-        if("".equals(vname))
+        try
         {
-            request.setAttribute("msg", "请输入医生姓名");
-            //这里虽然要返回的vetadd.jsp提示消息 但是不能直接转发到vetadd.jsp  因为vetadd.jsp需要专业集合显示数据
+            //这里需要根据表单封装一个Vet   表单里有医生名  专业id下拉列表
+            Vet vet = new Vet();
+            //根据下拉列表封装多个专业
+            String[] sids = request.getParameterValues("sid");
+            String vname = request.getParameter("vname");
+            if ("".equals(vname))
+            {
+//            request.setAttribute("msg", "请输入医生姓名");
+                //这里虽然要返回的vetadd.jsp提示消息 但是不能直接转发到vetadd.jsp  因为vetadd.jsp需要专业集合显示数据
 //			request.getRequestDispatcher("/vetadd.jsp").forward(request, response);
-            doGet(request, response);
-        }
-        else if(null==sids || 0==sids.length)
-        {
-            request.setAttribute("msg", "请选择专业");
-            doGet(request, response);
-        }
-        else
-        {
-            vet.setName(vname);
-            for(String sid:sids)
-            {
-                Speciality s=new Speciality();
-                s.setId(Integer.parseInt(sid));
-                vet.getSpecs().add(s);
+//            doGet(request, response);
+                request.setAttribute("msg", "请输入医生姓名");
+                request.setAttribute("specs", new SpecialityDAO().getAll());
+                request.getRequestDispatcher("/vetadd.jsp").forward(request, response);//这里可以直接转发到 vetadd.jsp
+                return;// 跳转到vetadd.jsp后，函数直接返回，modify by hlzhang, 20180417
             }
-            try
+            else if (null == sids || 0 == sids.length)
             {
+                request.setAttribute("msg", "请选择专业");
+//            doGet(request, response);
+                request.setAttribute("specs", new SpecialityDAO().getAll());
+                request.getRequestDispatcher("/vetadd.jsp").forward(request, response);//这里可以直接转发到 vetadd.jsp
+                return;// 跳转到vetadd.jsp后，函数直接返回，modify by hlzhang, 20180417
+            }
+            else
+            {
+                vet.setName(vname);
+                for (String sid : sids)
+                {
+                    Speciality s = new Speciality();
+                    s.setId(Integer.parseInt(sid));
+                    vet.getSpecs().add(s);
+                }
                 new VetDAO().save(vet);
-                request.setAttribute("msg", "添加新医生成功:"+ vet.getName());
+                request.setAttribute("msg", "添加新医生成功:" + vet.getName());
                 request.getRequestDispatcher("/vetsearch.jsp").forward(request, response);
             }
-            catch (Exception e)
-            {
-                request.setAttribute("msg",e.getMessage());
-                doGet(request,response);
-            }
         }
-
+        catch (Exception e)
+        {
+            request.setAttribute("msg", e.getMessage());
+            doGet(request, response);
+        }
     }
 }
