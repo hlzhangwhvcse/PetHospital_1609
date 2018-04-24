@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504">
+    <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -198,6 +198,11 @@
             <path>
               <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,7 +458,7 @@
       <workItem from="1523234034433" duration="4495000" />
       <workItem from="1521246899847" duration="5007000" />
       <workItem from="1524097237853" duration="6000000" />
-      <workItem from="1524529756413" duration="5191000" />
+      <workItem from="1524529756413" duration="5250000" />
     </task>
     <task id="LOCAL-00001" summary="initial  commit  by hlzhang, 20180320 at 504">
       <created>1521510253520</created>
@@ -511,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524534933379</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="workspace.xml 自动发生了修改">
+      <created>1524535002236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1524535002236</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42677000" />
+    <option name="totallyTimeSpent" value="42736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,7 +591,8 @@
     <MESSAGE value="1)修改VetServlet的addVet()方法，如果医生姓名为空或未在专业列表选择任何专业，改成仍在vetadd.jsp页面输出提示信息&#10;2)把多个jsp页面的msg提示信息设置成居中红色字体&#10;by hlzhang ,20180417 at 504" />
     <MESSAGE value="bug描述：在医生查询结果页面，成功删除一条医生记录后，自动跳转到医生查询页面并出现提示“删除医生成功”，此时再点【查询】按钮再次进入医生查询结果页面，再点【返回】按钮返回医生查询页面，仍出现提示“删除医生成功”，事实上并未执行删除医生的操作&#10;bug fixed：将医生查询结果页面vetsearch_result.jsp的返回按钮的链接改为location.href='vetsearch.jsp',直接跳转到医生查询页面" />
     <MESSAGE value="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504" />
+    <MESSAGE value="workspace.xml 自动发生了修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 自动发生了修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
