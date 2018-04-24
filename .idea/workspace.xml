@@ -6,16 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="1)增加了photo目录和5张宠物实例图片2)增加了查看客户明细页面customerdetail.jsp,去掉了该页面的宠物操作和添加宠物的链接3)数据库db_ph中增加了t_pet表">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dump20180419.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/customerdetail.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/photo/KittyCat.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/photo/MickeyMouse.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/photo/PuppyDog.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/photo/TeddyBear.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/photo/TomCat.jpg" />
+    <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/petSearch.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/petSearchResult.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetHospital_1609_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PetHospital_1609_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,40 +35,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customersearch_result.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/customersearch_result.jsp">
+      <file leaf-file-name="petSearch.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/petSearch.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="132" column="13" lean-forward="false" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+            <state relative-caret-position="115">
+              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="55" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#deleteCustomer#0;class#CustomerServlet#0" expanded="false" />
-                <element signature="method#saveCustomer#0;class#CustomerServlet#0" expanded="false" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/ph/po/User.java">
+      <file leaf-file-name="PetServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding>
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="petSearchResult.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/petSearchResult.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,20 +74,25 @@
       <file leaf-file-name="Pet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/ph/po/Pet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="247">
+              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerdetail.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/customerdetail.jsp">
+      <file leaf-file-name="PetDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="31" />
+            <state relative-caret-position="136">
+              <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="docComment;method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+                <element signature="method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+                <marker date="1524532514586" expanded="true" signature="2612:2734" ph="select t_pet... t_pet" />
               </folding>
             </state>
           </provider>
@@ -97,58 +101,15 @@
       <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+            <state relative-caret-position="2774">
+              <caret line="154" column="49" lean-forward="true" selection-start-line="154" selection-start-column="49" selection-end-line="154" selection-end-column="49" />
               <folding>
-                <marker date="1524098706285" expanded="true" signature="760:800" ph="insert into t_user... " />
-                <marker date="1524098706285" expanded="true" signature="1981:2014" ph="select * fro... t_user" />
-                <marker date="1524098706285" expanded="true" signature="3493:3551" ph="select * fro... t_user" />
-                <marker date="1524098706285" expanded="true" signature="5241:5272" ph="select * fro... t_user" />
-                <marker date="1524098706285" expanded="true" signature="6687:6716" ph="delete from t_user... " />
+                <marker date="1524530216078" expanded="true" signature="762:802" ph="insert into t_user... " />
+                <marker date="1524530216078" expanded="true" signature="1985:2018" ph="select * fro... t_user" />
+                <marker date="1524530216078" expanded="true" signature="3499:3557" ph="select * fro... t_user" />
+                <marker date="1524530216078" expanded="true" signature="5249:5280" ph="select * fro... t_user" />
+                <marker date="1524530216078" expanded="true" signature="6697:6726" ph="delete from t_user... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vetsearch.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/vetsearch.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customeradd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/customeradd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PetDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524097230761" expanded="true" signature="848:883" ph="select * fro... t_pet" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customersearch.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/customersearch.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -190,14 +151,18 @@
         <option value="$PROJECT_DIR$/web/specialityAdd.jsp" />
         <option value="$PROJECT_DIR$/web/customersearch_result.jsp" />
         <option value="$PROJECT_DIR$/src/src/ph/po/User.java" />
-        <option value="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" />
         <option value="$PROJECT_DIR$/src/src/ph/po/Pet.java" />
-        <option value="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" />
-        <option value="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" />
         <option value="$PROJECT_DIR$/web/vetsearch_result.jsp" />
         <option value="$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java" />
         <option value="$PROJECT_DIR$/web/customerdetail.jsp" />
+        <option value="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" />
+        <option value="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" />
+        <option value="$PROJECT_DIR$/web/petSearch.jsp" />
+        <option value="$PROJECT_DIR$/src/PetServlet.java" />
+        <option value="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" />
+        <option value="$PROJECT_DIR$/web/petSearchResult.jsp" />
+        <option value="$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java" />
       </list>
     </option>
   </component>
@@ -237,6 +202,29 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PetHospital_1609" type="cbb8eebc:String" user="PetHospital_1609" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -261,51 +249,6 @@
               <item name="src.ph" type="1f31426a:PackageElementNode" />
               <item name="po" type="1f31426a:PackageElementNode" />
             </path>
-            <path>
-              <item name="PetHospital_1609" type="58d84e3e:PackageViewProjectNode" />
-              <item name="PetHospital_1609" type="616d4139:PackageViewModuleNode" />
-              <item name="src.ph" type="1f31426a:PackageElementNode" />
-              <item name="utils" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PetHospital_1609" type="cbb8eebc:String" user="PetHospital_1609" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PetHospital_1609" type="cbb8eebc:String" user="PetHospital_1609" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PetHospital_1609" type="cbb8eebc:String" user="PetHospital_1609" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="src/ph" type="cbb8eebc:String" user="src/ph" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PetHospital_1609" type="cbb8eebc:String" user="PetHospital_1609" />
-              <item name="web" type="cbb8eebc:String" user="web" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -315,12 +258,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="last_opened_file_path" value="C:/Apache Software Foundation/Tomcat 8.5/lib" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Apache Software Foundation/Tomcat 8.5/lib" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
@@ -520,6 +463,7 @@
       <workItem from="1523234034433" duration="4495000" />
       <workItem from="1521246899847" duration="5007000" />
       <workItem from="1524097237853" duration="6000000" />
+      <workItem from="1524529756413" duration="5124000" />
     </task>
     <task id="LOCAL-00001" summary="initial  commit  by hlzhang, 20180320 at 504">
       <created>1521510253520</created>
@@ -574,7 +518,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37486000" />
+    <option name="totallyTimeSpent" value="42610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,28 +533,29 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37011173" sideWeight="0.8913882" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2472067" sideWeight="0.10861182" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118715085" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20372751" sideWeight="0.8335975" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20372751" sideWeight="0.16640253" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31843576" sideWeight="0.88688946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25418994" sideWeight="0.8913882" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.118715085" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16902314" sideWeight="0.82209736" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16902314" sideWeight="0.17790262" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12709497" sideWeight="0.88688946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15231362" sideWeight="0.14285715" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -618,7 +563,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5056543" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +581,8 @@
     <MESSAGE value="实现添加新客户的功能:&#10;1)增加了customeradd.jsp页面，&#10;2_在CustomerServlet的doPost方法增加了saveCustomer()方法，实现添加新客户的代码&#10;by hlzhang 20180117 at 504" />
     <MESSAGE value="1)修改VetServlet的addVet()方法，如果医生姓名为空或未在专业列表选择任何专业，改成仍在vetadd.jsp页面输出提示信息&#10;2)把多个jsp页面的msg提示信息设置成居中红色字体&#10;by hlzhang ,20180417 at 504" />
     <MESSAGE value="bug描述：在医生查询结果页面，成功删除一条医生记录后，自动跳转到医生查询页面并出现提示“删除医生成功”，此时再点【查询】按钮再次进入医生查询结果页面，再点【返回】按钮返回医生查询页面，仍出现提示“删除医生成功”，事实上并未执行删除医生的操作&#10;bug fixed：将医生查询结果页面vetsearch_result.jsp的返回按钮的链接改为location.href='vetsearch.jsp',直接跳转到医生查询页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug描述：在医生查询结果页面，成功删除一条医生记录后，自动跳转到医生查询页面并出现提示“删除医生成功”，此时再点【查询】按钮再次进入医生查询结果页面，再点【返回】按钮返回医生查询页面，仍出现提示“删除医生成功”，事实上并未执行删除医生的操作&#10;bug fixed：将医生查询结果页面vetsearch_result.jsp的返回按钮的链接改为location.href='vetsearch.jsp',直接跳转到医生查询页面" />
+    <MESSAGE value="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -666,12 +611,25 @@
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/petSearchResult.jsp</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="specs.get(6)" />
+        <watch expression="pets.get(0).name" />
       </configuration>
     </watches-manager>
   </component>
@@ -680,73 +638,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" column="69" lean-forward="false" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/inc/header.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/po/Vet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#186#198#0" expanded="false" />
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#282#283#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#367#368#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/utils/CheckCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="86" column="20" lean-forward="false" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="70" column="46" lean-forward="false" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
-          <folding>
-            <marker date="1524098706285" expanded="true" signature="760:800" ph="insert into t_user... " />
-            <marker date="1524098706285" expanded="true" signature="1981:2014" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="3493:3551" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="5241:5272" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="6687:6716" ph="delete from t_user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/vetsearch.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -789,11 +680,11 @@
         <state relative-caret-position="1672">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
-            <marker date="1524098706285" expanded="true" signature="760:800" ph="insert into t_user... " />
-            <marker date="1524098706285" expanded="true" signature="1981:2014" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="3493:3551" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="5241:5272" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="6687:6716" ph="delete from t_user... " />
+            <marker date="1524530216078" expanded="true" signature="762:802" ph="insert into t_user... " />
+            <marker date="1524530216078" expanded="true" signature="1985:2018" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="3499:3557" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="5249:5280" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="6697:6726" ph="delete from t_user... " />
           </folding>
         </state>
       </provider>
@@ -824,11 +715,11 @@
         <state relative-caret-position="190">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
-            <marker date="1524098706285" expanded="true" signature="760:800" ph="insert into t_user... " />
-            <marker date="1524098706285" expanded="true" signature="1981:2014" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="3493:3551" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="5241:5272" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="6687:6716" ph="delete from t_user... " />
+            <marker date="1524530216078" expanded="true" signature="762:802" ph="insert into t_user... " />
+            <marker date="1524530216078" expanded="true" signature="1985:2018" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="3499:3557" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="5249:5280" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="6697:6726" ph="delete from t_user... " />
           </folding>
         </state>
       </provider>
@@ -852,14 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,22 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#186#198#0" expanded="false" />
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#282#283#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#367#368#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,18 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#327#328#0" expanded="false" />
-            <element signature="e#359#360#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,44 +818,10 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Apache Software Foundation/Tomcat 8.5/lib/catalina.jar!/org/apache/catalina/core/ApplicationFilterChain.class" />
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/VetDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="204" column="94" lean-forward="false" selection-start-line="204" selection-start-column="94" selection-end-line="204" selection-end-column="94" />
-          <folding>
-            <element signature="method#getAll#0;class#VetDAO#0" expanded="false" />
-            <marker date="1524098706350" expanded="true" signature="1351:1684" ph="select disti... t_vet" />
-            <marker date="1524098706350" expanded="true" signature="2441:2670" ph="select t_spe... t_speciality" />
-            <marker date="1524098706350" expanded="true" signature="4511:4542" ph="insert into t_vet... " />
-            <marker date="1524098706350" expanded="true" signature="5018:5059" ph="insert into t_vet_speciality... " />
-            <marker date="1524098706350" expanded="true" signature="6745:6773" ph="delete from t_vet... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="64" column="95" lean-forward="false" selection-start-line="64" selection-start-column="95" selection-end-line="64" selection-end-column="95" />
-          <folding>
-            <marker date="1524098706392" expanded="true" signature="876:902" ph="select * fro... t_speciality" />
-            <marker date="1524098706392" expanded="true" signature="2050:2090" ph="insert into t_speciality... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customersearch.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1013,52 +834,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/customeradd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/vetsearch.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/customersearch_result.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="931">
           <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding>
-            <marker date="1524098706285" expanded="true" signature="760:800" ph="insert into t_user... " />
-            <marker date="1524098706285" expanded="true" signature="1981:2014" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="3493:3551" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="5241:5272" ph="select * fro... t_user" />
-            <marker date="1524098706285" expanded="true" signature="6687:6716" ph="delete from t_user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524097230761" expanded="true" signature="848:883" ph="select * fro... t_pet" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,10 +852,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="1691">
           <caret line="132" column="13" lean-forward="false" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#deleteCustomer#0;class#CustomerServlet#0" expanded="false" />
             <element signature="method#saveCustomer#0;class#CustomerServlet#0" expanded="false" />
           </folding>
@@ -1084,31 +864,179 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/po/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="399">
           <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding>
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1143#1144#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customerdetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="84" column="14" lean-forward="false" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/vetsearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customeradd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customersearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/VetDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="221" column="24" lean-forward="true" selection-start-line="221" selection-start-column="24" selection-end-line="221" selection-end-column="24" />
+          <folding>
+            <element signature="method#getAll#0;class#VetDAO#0" expanded="false" />
+            <marker date="1524530216139" expanded="true" signature="1353:1686" ph="select disti... t_vet" />
+            <marker date="1524530216139" expanded="true" signature="2443:2672" ph="select t_spe... t_speciality" />
+            <marker date="1524530216139" expanded="true" signature="4515:4546" ph="insert into t_vet... " />
+            <marker date="1524530216139" expanded="true" signature="5022:5063" ph="insert into t_vet_speciality... " />
+            <marker date="1524530216139" expanded="true" signature="6751:6779" ph="delete from t_vet... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="64" column="97" lean-forward="false" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
+          <folding>
+            <marker date="1524530216035" expanded="true" signature="878:904" ph="select * fro... t_speciality" />
+            <marker date="1524530216035" expanded="true" signature="2054:2094" ph="insert into t_speciality... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PetServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="47" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/petSearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/po/Pet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="247">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Apache Software Foundation/Tomcat 8.5/lib/jasper.jar!/org/apache/jasper/runtime/HttpJspBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" column="186" lean-forward="false" selection-start-line="17" selection-start-column="186" selection-end-line="17" selection-end-column="186" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/customerdetail.jsp">
+    <entry file="file://$PROJECT_DIR$/web/petSearchResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="31" />
+        <state relative-caret-position="721">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2774">
+          <caret line="154" column="49" lean-forward="true" selection-start-line="154" selection-start-column="49" selection-end-line="154" selection-end-column="49" />
+          <folding>
+            <marker date="1524530216078" expanded="true" signature="762:802" ph="insert into t_user... " />
+            <marker date="1524530216078" expanded="true" signature="1985:2018" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="3499:3557" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="5249:5280" ph="select * fro... t_user" />
+            <marker date="1524530216078" expanded="true" signature="6697:6726" ph="delete from t_user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="584" column="33" lean-forward="false" selection-start-line="584" selection-start-column="33" selection-end-line="584" selection-end-column="35" />
+          <caret line="583" column="33" lean-forward="false" selection-start-line="583" selection-start-column="33" selection-end-line="583" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+            <element signature="method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+            <marker date="1524532514586" expanded="true" signature="2612:2734" ph="select t_pet... t_pet" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1155,7 +1083,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9.0</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
