@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/ph/servlet/PetServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/petSearch.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/petSearchResult.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetHospital_1609_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PetHospital_1609_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -463,7 +453,7 @@
       <workItem from="1523234034433" duration="4495000" />
       <workItem from="1521246899847" duration="5007000" />
       <workItem from="1524097237853" duration="6000000" />
-      <workItem from="1524529756413" duration="5124000" />
+      <workItem from="1524529756413" duration="5191000" />
     </task>
     <task id="LOCAL-00001" summary="initial  commit  by hlzhang, 20180320 at 504">
       <created>1521510253520</created>
@@ -514,11 +504,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524099592703</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完成宠物查询功能，增加了宠物查询页面petSearch.jsp和宠物查询结果页面PetSearchResult.jsp，增加了宠物管理的业务逻辑PetServet,并增加一个查询宠物的方法searchPet(），在PetDAO中增加了一个方法search(),能根据宠物名称和主人姓名，查找宠物，并封装为宠物实体类的对象集合并返回&#10;by hlzhang, 20180424 at 504">
+      <created>1524534933379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524534933379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42610000" />
+    <option name="totallyTimeSpent" value="42677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
