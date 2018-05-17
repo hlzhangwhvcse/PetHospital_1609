@@ -20,6 +20,7 @@ import src.ph.po.User;
 
 //@WebServlet(name = "PetServlet")
 @WebServlet("/PetServlet")
+@MultipartConfig
 
 
 public class PetServlet extends HttpServlet
