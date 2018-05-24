@@ -22,7 +22,11 @@ public class VisitDAO
         {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_ph", "root", "root");
-            ps = con.prepareStatement("select visit.*,vet.name from t_visit as visit inner join t_vet as vet on (visit.vetId=vet.id) where visit.petId=?");
+//            ps = con.prepareStatement("select visit.*,vet.name from t_visit as visit inner join t_vet as vet on (visit.vetId=vet.id) where visit.petId=?");
+            ps = con.prepareStatement("select t_vet.name, t_visit.*\n" +
+                    " from t_vet, t_visit\n" +
+                    " where t_vet.id = t_visit.vetId\n" +
+                    " and   t_visit.petId=?");
             ps.setInt(1,petId);
             rs = ps.executeQuery();
             while(rs.next())
