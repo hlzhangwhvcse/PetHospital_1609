@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/ph/utils/EncodingFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/ph/utils/AuthenticFilter.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="EncodingFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/ph/utils/EncodingFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="183">
+              <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="25" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
@@ -53,7 +52,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VisitServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+              <folding>
+                <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/utils/AuthenticFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#658#666#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -66,18 +92,6 @@
                 <marker date="1527557457878" expanded="true" signature="3633:3691" ph="select * fro... t_user" />
                 <marker date="1527557457878" expanded="true" signature="5383:5414" ph="select * fro... t_user" />
                 <marker date="1527557457878" expanded="true" signature="6831:6860" ph="delete from t_user... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisitServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -194,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java" />
         <option value="$PROJECT_DIR$/src/src/ph/utils/EncodingFilter.java" />
         <option value="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/src/ph/utils/AuthenticFilter.java" />
       </list>
     </option>
   </component>
@@ -238,41 +253,6 @@
             <path>
               <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ph" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ph" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -545,7 +525,7 @@
       <workItem from="1526522249948" duration="1595000" />
       <workItem from="1526949904611" duration="4170000" />
       <workItem from="1527121275620" duration="4135000" />
-      <workItem from="1527554025205" duration="3652000" />
+      <workItem from="1527554025205" duration="4289000" />
     </task>
     <task id="LOCAL-00001" summary="initial  commit  by hlzhang, 20180320 at 504">
       <created>1521510253520</created>
@@ -645,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527556172821</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="增加了一个过滤器EncodingFilter，在请求中设置中文编码，能在页面正确显示显示中文">
+      <created>1527557772950</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1527557772950</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63448000" />
+    <option name="totallyTimeSpent" value="64085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,12 +661,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27653632" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44273743" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.76447874" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.23552124" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.87218046" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.12781955" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="1" side_tool="false" content_ui="tabs" />
@@ -721,7 +708,8 @@
     <MESSAGE value="1)病历查询修改为能根据宠物名字和宠物主人进行查询&#10;2)增加了病历实体类Visit和病历数据库访问类VisitDAO历史病历页面查询历史病历&#10;3）增加了显示历史病历的页面showCaseHistory.jsp&#10;4)VisitServlet增加了查询历史病历的方法showCaseHistory" />
     <MESSAGE value="1)病历管理中修改为能根据宠物名字和宠物主人姓名查询宠物信息&#10;2)增加了病历实体类Visit和病历数据库访问类VisitDAO历史病历页面查询历史病历&#10;3）增加了显示历史病历的页面showCaseHistory.jsp&#10;4)VisitServlet增加了查询历史病历的方法showCaseHistory" />
     <MESSAGE value="1)增加了一个添加新病历的页面addCaseHistory.jsp&#10;2)VisitServlet增加了历史病历的方法saveCaseHistory&#10;3)数据库访问类VisitDAO,并增加了save方法,用于插入病历记录数据库t_visit，并把调用的MYSQL的函数改为NOW(）即显示年月日时分秒" />
-    <option name="LAST_COMMIT_MESSAGE" value="1)增加了一个添加新病历的页面addCaseHistory.jsp&#10;2)VisitServlet增加了历史病历的方法saveCaseHistory&#10;3)数据库访问类VisitDAO,并增加了save方法,用于插入病历记录数据库t_visit，并把调用的MYSQL的函数改为NOW(）即显示年月日时分秒" />
+    <MESSAGE value="增加了一个过滤器EncodingFilter，在请求中设置中文编码，能在页面正确显示显示中文" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了一个过滤器EncodingFilter，在请求中设置中文编码，能在页面正确显示显示中文" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,13 +753,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PetHospital_1609.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dump20180403.sql" />
     <entry file="file://$PROJECT_DIR$/src/src/ph/po/Vet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1076,16 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/visitSearchResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1112,18 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/utils/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1136,6 +1095,41 @@
             <marker date="1527557457878" expanded="true" signature="3633:3691" ph="select * fro... t_user" />
             <marker date="1527557457878" expanded="true" signature="5383:5414" ph="select * fro... t_user" />
             <marker date="1527557457878" expanded="true" signature="6831:6860" ph="delete from t_user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/utils/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="25" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/utils/AuthenticFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#658#666#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
           </folding>
         </state>
       </provider>
