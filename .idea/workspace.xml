@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f97546d-9367-4538-a787-f8e14d922f67" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/PetDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/UserDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/VetDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/dao/VisitDAO.java" afterPath="$PROJECT_DIR$/src/src/ph/dao/VisitDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java" afterPath="$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java" />
-      <change beforePath="$PROJECT_DIR$/web/addCaseHistory.jsp" afterPath="$PROJECT_DIR$/web/addCaseHistory.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/inc/header.inc" afterPath="$PROJECT_DIR$/web/inc/header.inc" />
+      <change beforePath="$PROJECT_DIR$/web/petSearchResult.jsp" afterPath="$PROJECT_DIR$/web/petSearchResult.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,14 +37,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VisitServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VisitServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="525">
               <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
               <folding>
                 <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PetDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="190" column="42" lean-forward="false" selection-start-line="190" selection-start-column="42" selection-end-line="190" selection-end-column="42" />
+              <folding>
+                <element signature="docComment;method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+                <marker date="1527726498057" expanded="true" signature="848:883" ph="select * fro... t_pet" />
+                <marker date="1527726498057" expanded="true" signature="2608:2730" ph="select t_pet... t_pet" />
+                <marker date="1527726498057" expanded="true" signature="4500:4528" ph="delete from t_pet... " />
+                <marker date="1527726498057" expanded="true" signature="5604:5641" ph="insert into t_pet... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.inc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/inc/header.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="petSearchResult.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/petSearchResult.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1333">
+              <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,12 +159,10 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/newPetAdd.jsp" />
         <option value="$PROJECT_DIR$/web/petSearch.jsp" />
-        <option value="$PROJECT_DIR$/web/petSearchResult.jsp" />
         <option value="$PROJECT_DIR$/web/specialityAdd.jsp" />
         <option value="$PROJECT_DIR$/web/vetadd.jsp" />
         <option value="$PROJECT_DIR$/web/vetsearch.jsp" />
         <option value="$PROJECT_DIR$/web/vetsearch_result.jsp" />
-        <option value="$PROJECT_DIR$/web/inc/header.inc" />
         <option value="$PROJECT_DIR$/web/styles.css" />
         <option value="$PROJECT_DIR$/web/visitSearch.jsp" />
         <option value="$PROJECT_DIR$/src/src/ph/po/Visit.java" />
@@ -141,6 +178,8 @@
         <option value="$PROJECT_DIR$/src/src/ph/dao/VisitDAO.java" />
         <option value="$PROJECT_DIR$/web/addCaseHistory.jsp" />
         <option value="$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java" />
+        <option value="$PROJECT_DIR$/web/petSearchResult.jsp" />
+        <option value="$PROJECT_DIR$/web/inc/header.inc" />
       </list>
     </option>
   </component>
@@ -244,6 +283,12 @@
               <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetHospital_1609" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetHospital_1609" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -495,7 +540,7 @@
       <workItem from="1526949904611" duration="4170000" />
       <workItem from="1527121275620" duration="4135000" />
       <workItem from="1527554025205" duration="4289000" />
-      <workItem from="1527726145505" duration="3022000" />
+      <workItem from="1527726145505" duration="3909000" />
     </task>
     <task id="LOCAL-00001" summary="initial  commit  by hlzhang, 20180320 at 504">
       <created>1521510253520</created>
@@ -602,11 +647,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527557772950</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="addCaseHistory.jsp增加了一个隐藏的输入框petName(因为pname输入框为disabled，导致该参数在post请求时不会被提交)，传参petName到VisitServlet的addCaseHistory()方法中，用于在提示病历添加成功时能显示所添加病历的宠物姓名">
+      <created>1527729294033</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1527729294033</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67107000" />
+    <option name="totallyTimeSpent" value="67994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,12 +683,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35416666" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.4730077" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280206" sideWeight="0.8731183" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280206" sideWeight="0.12688172" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280206" sideWeight="0.8754789" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280206" sideWeight="0.12452107" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="1" side_tool="false" content_ui="tabs" />
@@ -679,7 +731,8 @@
     <MESSAGE value="1)病历管理中修改为能根据宠物名字和宠物主人姓名查询宠物信息&#10;2)增加了病历实体类Visit和病历数据库访问类VisitDAO历史病历页面查询历史病历&#10;3）增加了显示历史病历的页面showCaseHistory.jsp&#10;4)VisitServlet增加了查询历史病历的方法showCaseHistory" />
     <MESSAGE value="1)增加了一个添加新病历的页面addCaseHistory.jsp&#10;2)VisitServlet增加了历史病历的方法saveCaseHistory&#10;3)数据库访问类VisitDAO,并增加了save方法,用于插入病历记录数据库t_visit，并把调用的MYSQL的函数改为NOW(）即显示年月日时分秒" />
     <MESSAGE value="增加了一个过滤器EncodingFilter，在请求中设置中文编码，能在页面正确显示显示中文" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了一个过滤器EncodingFilter，在请求中设置中文编码，能在页面正确显示显示中文" />
+    <MESSAGE value="addCaseHistory.jsp增加了一个隐藏的输入框petName(因为pname输入框为disabled，导致该参数在post请求时不会被提交)，传参petName到VisitServlet的addCaseHistory()方法中，用于在提示病历添加成功时能显示所添加病历的宠物姓名" />
+    <option name="LAST_COMMIT_MESSAGE" value="addCaseHistory.jsp增加了一个隐藏的输入框petName(因为pname输入框为disabled，导致该参数在post请求时不会被提交)，传参petName到VisitServlet的addCaseHistory()方法中，用于在提示病历添加成功时能显示所添加病历的宠物姓名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -701,12 +754,6 @@
           <line>122</line>
           <properties />
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="48" />
@@ -813,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/petSearchResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="64" column="10" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/vetadd.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -875,14 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/QuitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -897,13 +928,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/inc/header.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -951,20 +975,6 @@
     </entry>
     <entry file="jar://C:/Program Files (x86)/Apache Software Foundation/Tomcat 8.5/lib/catalina.jar!/org/apache/catalina/core/ApplicationFilterChain.class" />
     <entry file="jar://C:/Program Files (x86)/Apache Software Foundation/Tomcat 8.5/lib/servlet-api.jar!/javax/servlet/ServletRequest.class" />
-    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="189" column="94" lean-forward="false" selection-start-line="189" selection-start-column="94" selection-end-line="189" selection-end-column="94" />
-          <folding>
-            <element signature="docComment;method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
-            <marker date="1527726498057" expanded="true" signature="848:883" ph="select * fro... t_pet" />
-            <marker date="1527726498057" expanded="true" signature="2608:2730" ph="select t_pet... t_pet" />
-            <marker date="1527726498057" expanded="true" signature="4500:4528" ph="delete from t_pet... " />
-            <marker date="1527726498057" expanded="true" signature="5604:5641" ph="insert into t_pet... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/dao/SpecialityDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
@@ -1080,13 +1090,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/dao/PetDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="190" column="42" lean-forward="false" selection-start-line="190" selection-start-column="42" selection-end-line="190" selection-end-column="42" />
+          <folding>
+            <element signature="docComment;method#getPetsByOwnerId#0;class#PetDAO#0" expanded="false" />
+            <marker date="1527726498057" expanded="true" signature="848:883" ph="select * fro... t_pet" />
+            <marker date="1527726498057" expanded="true" signature="2608:2730" ph="select t_pet... t_pet" />
+            <marker date="1527726498057" expanded="true" signature="4500:4528" ph="delete from t_pet... " />
+            <marker date="1527726498057" expanded="true" signature="5604:5641" ph="insert into t_pet... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/CustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1333">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/ph/servlet/VisitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="525">
           <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
           <folding>
             <element signature="method#searchPet#0;class#VisitServlet#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/petSearchResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/inc/header.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,5 @@
 <%@ page pageEncoding="UTF-8"%>
+    <a href="">修改密码</a>
     <a href="QuitServlet">退出</a>
     <h1>社区宠物诊所</h1>
     <ul class="menu">
