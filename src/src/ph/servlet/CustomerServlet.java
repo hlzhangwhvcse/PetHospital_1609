@@ -13,6 +13,7 @@ import src.ph.dao.PetDAO;
 import src.ph.dao.UserDAO;
 import src.ph.po.Pet;
 import src.ph.po.User;
+import src.ph.utils.MD5Util;
 
 //@WebServlet(name = "CustomerServlet")
 @WebServlet("/CustomerServlet")
@@ -106,8 +107,8 @@ public class CustomerServlet extends HttpServlet
         user.setAddress(request.getParameter("address"));
         user.setTel(request.getParameter("tel"));
         user.setRole("customer");
-        user.setPwd("123456");
-
+//        user.setPwd("123456");
+        user.setPwd(MD5Util.MD5("123456"));
         try
         {
             new UserDAO().save(user);
